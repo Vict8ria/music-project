@@ -1,0 +1,72 @@
+.artists {
+	position: relative;
+	margin: 60px 0 0;
+	.artists__container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		.artists__items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			overflow: hidden;
+			height: 200px;
+			position: relative;
+			&:before, &:after {
+				position: absolute;
+				bottom: 3px;
+				content: "";
+				box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+				height: 1px;
+			}
+			&:before {
+				left: 0;
+				width: 48%;
+			}
+			&:after {
+				right: 0;
+				width: 48%;
+			}
+			.artists__item {
+				border-radius: 50%;
+				width: 170px;
+				height: 170px;
+				overflow: hidden;
+				margin-bottom: 40px;
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+				.artist {		
+					img {
+						width: 170px;
+						height: 170px;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+	.artists__link {
+		padding: 20px 0;
+		display: inline-block;
+	}
+	.arrow-down {
+		position: absolute;
+		bottom: 35px;
+		width: 45px;
+		height: 45px;
+		left: calc(50% - 22.5px);
+		display: block;
+		padding: 10px;
+		box-sizing: border-box;
+		margin: 0 auto;
+		cursor: pointer;
+		transform: rotate(0deg);
+		transition: transform .1s;
+		svg {
+			display: block;
+			opacity: .6;
+		}
+	}
+	.rotate-button {
+		transform: rotate(-180deg);
+	}
+}

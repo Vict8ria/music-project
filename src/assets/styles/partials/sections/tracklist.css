@@ -1,0 +1,60 @@
+.tracklist {
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	margin-top: 80px;
+	padding: 30px;
+	position: relative;
+	.top__links {
+		display: flex;
+		border-bottom: 1px solid rgba(0, 0, 0, .6);
+		.top__link {
+			font-style: italic;
+			margin-right: 30px;
+			cursor: pointer;
+			padding: 10px;
+			box-sizing: border-box;
+			opacity: .8;
+		}
+		.current {
+			opacity: 1;
+		}
+	}
+	.slide__link {
+		border-bottom: 2px solid #fff;
+		position: absolute;
+		width: 107px;
+		top: 68px;
+	}
+	.top-content{
+		display: none;
+		padding: 15px;
+	}
+	.top-content.current{
+		display: inherit;
+	}
+	&__items {
+		margin-top: 50px;
+		.tracklist__item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			padding: 20px 24px 20px 70px;
+			border-bottom: 1px solid rgba(0, 0, 0, .3);
+			&::before {
+    			content: "\25B6 ";
+				font-size: 2rem;
+				position: absolute;
+				left: 20px;
+				top: 5px;
+				color: #ccc;
+			}
+		}
+	}
+}
+
+
+
+
+

@@ -1,0 +1,14 @@
+@import './variables.css';
+@import 'partials/vendors/typography.css';
+@import 'partials/vendors/normalize.css';
+@import 'partials/sections/header.css';
+@import 'partials/sections/artists.css';
+@import 'partials/sections/tracklist.css';
+@import 'partials/sections/footer.css';
+@import 'partials/sections/player.css';
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 20px;
+}

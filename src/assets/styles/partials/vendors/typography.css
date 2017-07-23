@@ -1,0 +1,19 @@
+body {
+	background-color: #ccc;
+	font-family: "Cousine",serif;
+	font-size: 16px;
+	background: #ccc;  
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style: none;
+	}
+}

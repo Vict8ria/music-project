@@ -1,0 +1,98 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	align-items: center;
+	.logo {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 2em;
+	}
+	&__menu {
+		margin-left: 220px;
+	}
+	.menu {
+		&__items {
+			display: flex;
+			.menu__item {
+				margin: 0 15px;
+				.menu__link {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.searchbox{
+	    position:relative;
+	    min-width:40px;
+	    width:0%;
+	    height:40px;
+	    float:right;
+	    overflow:hidden;
+	    transition: width 0.3s;
+	    &-input{
+		    top:0;
+		    right:0;
+		    border:0;
+		    outline:0;
+		    width:100%;
+		    background: transparent;
+		    height:40px;
+		    margin:0;
+		    padding:0px 55px 0px 20px;
+		    font-size:20px;
+		    &:-webkit-input-placeholder {
+		    	color: #d74b4b;
+		    }
+		    &-input:-moz-placeholder {
+			    color: #d74b4b;
+			}
+			&:-moz-placeholder {
+			    color: #d74b4b;
+			}
+			&:-ms-input-placeholder {
+			    color: #d74b4b;
+			}
+		}
+		&-icon,
+		&-submit{
+		    width:40px;
+		    height:40px;
+		    display:block;
+		    position:absolute;
+		    top:0;
+		    font-size:20px;
+		    right:0;
+		    padding:0;
+		    margin:0;
+		    border:0;
+		    outline:0;
+		    line-height:40px;
+		    text-align:center;
+		    cursor:pointer;
+		    color:#000;
+		}
+		&-open{
+		    width:100%;
+		}
+		&-submit {
+			background: transparent;
+		}
+		&-icon {
+			padding: 5px;
+			box-sizing: border-box;
+			opacity: .5;
+			.icon__image {
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
